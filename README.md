@@ -12,12 +12,14 @@ My final dashboard is in [Salary_Dashboard_Excel](https://github.com/nzubehenry/
 
 ### Excel Skills Used
 The following Excel skills were utilized for analysis:
+
 - 📉 Charts
 - 🧮 Formulas and Functions
 - ❎ Data Validation
 
 ### Data Jobs Dataset
 The dataset used for this project contains real-world data on job information in data science from 2023. The dataset is a combination of job postings scraped from different job sites. It includes detailed information on:
+
 - 👨‍💼 Job titles
 - 💰 Salaries
 - 📍 Locations
@@ -28,13 +30,18 @@ The dataset used for this project contains real-world data on job information in
 ### 📊 Data Science Job Salaries - Bar Chart
 <img width="600" height="430" alt="Screenshot 2025-09-07 at 17 09 15" src="https://github.com/user-attachments/assets/82fb5fef-619a-437a-a595-249eec5e0a8b" />
 
+
+
 - 🛠️ Excel Features: Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 Design Choice: Horizontal bar chart for visual comparison of median salaries.
 - 📉 Data Organization: Sorted job titles by descending salary for improved readability.
 - 💡 Insights Gained: This enables quick identification of salary trends, noting that Senior roles and Engineers are higher-paying than Analyst roles.
 
 ### 🗺️ Country Median Salaries - Map Chart
+
 <img width="600" height="430" alt="image" src="https://github.com/user-attachments/assets/150f3626-0aa5-4a55-89e0-cb06884662b1" />
+
+
 
 - 🛠️ Excel Features: Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 Design Choice: Color-coded map to visually differentiate salary levels across regions.
@@ -44,6 +51,7 @@ The dataset used for this project contains real-world data on job information in
 
 ### 🧮 Formulas and Functions
 ### 💰 Median Salary by Job Titles
+
 ```
 =MEDIAN(
 IF(
@@ -54,6 +62,7 @@ IF(
     jobs[salary_year_avg]
 )
 )
+
 ```
 - 🔍 Multi-Criteria Filtering: Checks job title, country, schedule type, and excludes blank salaries.
 - 📊 Array Formula: Utilizes MEDIAN() function with nested IF() statement to analyze an array.
@@ -70,8 +79,11 @@ IF(
 <img width="430" height="430" alt="1_Salary_Dashboard_Job_Title" src="https://github.com/user-attachments/assets/3d0aa842-7c79-48d1-ad26-eb9fd9d153dd" />
 
 
+
 ⏰ Count of Job Schedule Type
+
 ``` =FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0)) ```
+
 - 🔍 Unique List Generation: This Excel formula below employs the FILTER() function to exclude entries containing "and" or commas, and omit zero values.
 - 🔢 Formula Purpose: This formula populates the table below, which gives us a list of unique job schedule types.
 
@@ -97,4 +109,6 @@ IF(
 
 # Conclusion
 I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing the dataset, this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries.
+
+
 
